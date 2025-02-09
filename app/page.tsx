@@ -58,7 +58,7 @@ const WaitlistPage = () => {
     setIsLoading(true);
 
     try {
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from('slot_app')
         .insert([
           {
@@ -174,7 +174,7 @@ const WaitlistPage = () => {
           </h2>
           {submitted ? (
             <div className="p-6 rounded-lg border border-[#304740] bg-[#304740]/5 text-[#304740] text-center">
-              <p>Thanks for signing up! We'll be in touch soon.</p>
+              <p>Thanks for signing up! We&apos;ll be in touch soon.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
