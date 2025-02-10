@@ -16,7 +16,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Phone, Mail, Calendar, BarChart, CreditCard, Instagram, Twitter } from 'lucide-react';
+import { Phone,  Calendar, BarChart, CreditCard, Instagram, } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa6";
 import { toast } from '@/hooks/use-toast';
 
 // Initialize Supabase client
@@ -276,26 +277,26 @@ const WaitlistPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-16 border-t border-[#304740]/10">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex flex-col items-center space-y-8">
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
               <div className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-[#304740]" />
-                <span className="text-[#304740]/80">+965 1234 5678</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="w-5 h-5 text-[#304740]" />
-                <span className="text-[#304740]/80">contact@slotsapp.com</span>
+                <span className="text-[#304740]/80">+965 9676 7536</span>
               </div>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="hover:opacity-80 transition-opacity">
+              <a href="https://instagram.com/try.slots" className="hover:opacity-80 transition-opacity">
                 <Instagram className="w-6 h-6 text-[#304740]" />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity">
-                <Twitter className="w-6 h-6 text-[#304740]" />
+              <a 
+                href="https://wa.me/96596767536" 
+                className="hover:opacity-80 transition-opacity"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp className="w-6 h-6 text-[#304740]" />
               </a>
             </div>
             <p className="text-sm text-[#304740]/60">
