@@ -147,43 +147,25 @@ const WaitlistPage = () => {
   return (
     <>
       {/* Fixed Navbar */}
-      <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 w-1/2 backdrop-blur-sm z-50 border-b border-[#304740]/10">
-  <div className="container mx-auto px-4">
-    <div className="flex items-center justify-between h-16"> {/* Adjusted height back to h-16 for better spacing */}
-      <div className="relative h-16 w-48"> {/* Increased height and width for the logo container */}
-        <Image
-          src="/slot-logo.svg"
-          alt="Slots Logo"
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
-      <div className="flex items-center space-x-8"> {/* Increased space between items */}
-        
-        <a 
-          href="https://instagram.com/try.slots" 
-          className="text-[#304740] hover:opacity-80 transition-opacity"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Instagram className="w-8 h-8" /> {/* Increased icon size */}
-        </a>
-        <a 
-          href="https://wa.me/96596767536" 
-          className="text-[#304740] hover:opacity-80 transition-opacity"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaWhatsapp className="w-8 h-8" /> {/* Increased icon size */}
-        </a>
-      </div>
-    </div>
-  </div>
-</nav>
+      <nav className="fixed top-0 left-0 w-full backdrop-blur-sm z-50 border-b border-[#304740]/10">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center h-16">
+            <div className="relative h-16 w-48">
+              <Image
+                src="/slot-logo.svg"
+                alt="Slots Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Main Content */}
       <div className="min-h-screen bg-[#FBF9ED] pt-16">
-        {/* Hero Section */}
+        {/* Rest of the sections */}
         <section className="py-16 md:py-32 border-b border-[#304740]/10">
           <div className="container mx-auto px-4 text-center max-w-4xl">
             <h1 className="text-3xl md:text-6xl font-bold mb-4 text-[#304740]">
@@ -228,10 +210,9 @@ const WaitlistPage = () => {
                   />
                   <Input
                     name="owner_name"
-                    placeholder="Owner's Name"
+                    placeholder="Owner's Name (Optional)"
                     value={formData.owner_name}
                     onChange={handleInputChange}
-                    required
                     className="w-full border-[#304740]/20 focus:border-[#304740] bg-transparent"
                   />
                   <Select name="businessType">
