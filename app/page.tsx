@@ -147,7 +147,7 @@ const WaitlistPage = () => {
   return (
     <>
       {/* Fixed Navbar */}
-      <nav className="fixed top-0 left-0 w-full backdrop-blur-sm z-50 border-b border-[#304740]/10">
+      <nav className="fixed top-0 left-0 w-full bg-[#FBF9ED] z-50 border-b border-[#304740]/10">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center h-16">
             <div className="relative h-16 w-48">
@@ -166,7 +166,7 @@ const WaitlistPage = () => {
       {/* Main Content */}
       <div className="min-h-screen bg-[#FBF9ED] pt-16">
         {/* Rest of the sections */}
-        <section className="py-16 md:py-32 border-b border-[#304740]/10">
+        <section className="py-8 md:py-16 border-b border-[#304740]/10">
           <div className="container mx-auto px-4 text-center max-w-4xl">
             <h1 className="text-3xl md:text-6xl font-bold mb-4 text-[#304740]">
               Grow Your Business with Easy Online Bookings
@@ -174,7 +174,7 @@ const WaitlistPage = () => {
             <p className="text-lg md:text-xl mb-12 text-[#304740]/80 max-w-2xl mx-auto">
               Connect with customers in Kuwait through our simple, user-friendly booking system
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex flex-col items-center p-6 rounded-lg border border-[#304740]/10 hover:border-[#304740]/20 transition-colors">
                   <div className="text-[#304740] mb-4">
@@ -188,7 +188,7 @@ const WaitlistPage = () => {
         </section>
 
         {/* Vendor Sign-Up Form */}
-        <section className="py-16 md:py-32 border-b border-[#304740]/10">
+        <section className="py-8 md:py-16 border-b border-[#304740]/10">
           <div className="container mx-auto px-4 max-w-2xl">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-[#304740]">
               Join Slots Today
